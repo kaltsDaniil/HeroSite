@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
+    <link rel="shortcut icon" href="./logo/icon.ico" type="image/x-icon">
+    <title>TV show Landing Page</title>
+</head>
+<body>
+<div class="back-to-top" onclick="toTop()">&uarr;</div>
+<nav class="nav">
+    <div class="nav-wrapper">
+        <img src="./logo/logo.svg" alt="logo" class="nav-logo">
+        <div class="nav-burger" id="burger">
+            <div class="nav-burger__line1" id="line1"></div>
+            <div class="nav-burger__line2" id="line2"></div>
+            <div class="nav-burger__line3" id="line3"></div>
+        </div>
+        <ul id="cotegor">
+            <li><a href="#banner" class="nav-link active">Home</a></li>
+            <li><a href="#tvshows" class="nav-link">TV Shows</a></li>
+            <li><a href="#tvmovies" class="nav-link">Movies</a></li>
+            <li><a href="#tvshows" class="nav-link">Series</a></li>
+        </ul>
+        <div class="nav-properties" id="properties">
+            <div class="nav-search">
+                <input type="text" id="searchInput" autocomplete="off" onkeypress="searchFunc(event)">
+                <img src="./logo/loop.svg" alt="loop" class="nav-properties__item" id="loop">
+                <div class="nav-search__variables" id="prompt">
+                    <p class="searchText">Samantha Bowen</p>
+                    <p class="searchText">Rhys Birch</p>
+                    <p class="searchText">James Hollowayt</p>
+                    <p class="searchText">Joshua Walton</p>
+                    <p class="searchText">Patrick Elliott</p>
+                    <p class="searchText">Morgan O'Neill</p>
+                </div>
+            </div>
+            <img src="./logo/loop.svg" alt="loop" class="nav-properties__item" id="mainLoop">
+            <img src="./logo/bell.svg" alt="bell" class="nav-properties__item">
+            <img src="./logo/cabine.svg" alt="cabine" class="nav-properties__item">
+        </div>
+    </div>
+</nav>
+<header class="banner" id="banner">
+    <div class="banner-wrapper">
+        <div class="banner-info">
+            <h1 class="banner-title">Zack Snyder's Justice League</h1>
+            <div class="banner-description">
+                <ul>
+                    <li><p>2021</p></li>
+                    <li><p>18+</p></li>
+                    <li><p>4h 2min</p></li>
+                </ul>
+                <div class="banner-rate">
+                    <p>8.8</p>
+                    <img src="./logo/star.svg" alt="str" class="banner-star">
+                </div>
+            </div>
+            <p class="banner-text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+            <div class="banner-buttons">
+                <div class="banner-watch">
+                    <img src="./logo/arrow.svg" alt="arrow" class="banner-watch__arrow">
+                    <p class="banner-watch__text">Watch</p>
+                </div>
+                <a href="#moreinfo"><button class="banner-information">More information</button></a>
+            </div>
+        </div>
+        <div class="banner-background" id="poster"></div>
+        <video class="banner-background" controls src="/Zack Snyder's Justice League _ Official Trailer _ HBO Max.mp4" id="video"></video>
+    </div>
+</header>
+<section class="trendings" id="tvshows">
+    <div class="trendings-wrapper"></div>
+        <h3 class="trendings-title">Trending TV Shows ></h3>
+        <div class="trendings-cards">
+            <img src="./shows/show1.svg" alt="show1">
+            <img src="./shows/show2.svg" alt="show2">
+            <img src="./shows/show3.svg" alt="show3">
+            <img src="./shows/show4.svg" alt="show4">
+            <img src="./shows/show5.svg" alt="show5">
+            <img src="./shows/show6.svg" alt="show6">
+        </div>
+    </div>
+</section>
+<section class="trendings" id="tvmovies">
+    <div class="trendings-wrapper">
+        <h3 class="trendings-title">Trending Movies > </h3>
+        <div class="trendings-cards">
+            <img src="./movies/movies1.svg" alt="movies1">
+            <img src="./movies/movies2.svg" alt="movies2">
+            <img src="./movies/movies3.svg" alt="movies3">
+            <img src="./movies/movies4.svg" alt="movies4">
+            <img src="./movies/movies5.svg" alt="movies5">
+            <img src="./movies/movies6.svg" alt="movies6">
+        </div>
+        <div class="trendings-cards" id="more-cards">
+            <img src="./movies/movies1.svg" alt="movies1">
+            <img src="./movies/movies2.svg" alt="movies2">
+            <img src="./movies/movies3.svg" alt="movies3">
+            <img src="./movies/movies4.svg" alt="movies4">
+            <img src="./movies/movies5.svg" alt="movies5">
+            <img src="./movies/movies6.svg" alt="movies6">
+        </div>
+        <button class="trendings-btn" onclick="seeMore()" >See more</button>
+    </div>
+</section>
+<section class="genres">
+    <div class="genres-wrapper">
+        <h3 class="genres-title">Popular genres ></h3>
+        <div class="genres-cards">
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/hearts 1.svg" alt="genre">
+                <p class="genres-card__title">Romance</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/cinema 1.svg" alt="genre">
+                <p class="genres-card__title">Drama</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/documentary 1.svg" alt="genre">
+                <p class="genres-card__title">Historical</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/killer 1.svg" alt="genre">
+                <p class="genres-card__title">Action</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/rocket 1.svg" alt="genre">
+                <p class="genres-card__title">Sci-fi</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/ghost 1.svg" alt="genre">
+                <p class="genres-card__title">Horror</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/smile 1.svg" alt="genre">
+                <p class="genres-card__title">Comedy</p>
+            </div>
+            <div class="genres-card">
+                <img class="genres-card__img" src="./genres/castle 1.svg" alt="genre">
+                <p class="genres-card__title">Documentary</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="acters">
+    <div class="acters-wrapper">
+        <h3 class="acters-title">Popular Actors & Directors ></h3>
+        <div class="acters-cards">
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group.svg" alt="acter">
+                <p class="acters-card__title">Samantha Bowen</p>
+            </div>
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group (1).svg" alt="acter">
+                <p class="acters-card__title">Rhys Birch</p>
+            </div>
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group (2).svg" alt="acter">
+                <p class="acters-card__title">James Holloway</p>
+            </div>
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group (4).svg" alt="acter">
+                <p class="acters-card__title">Joshua Walton</p>
+            </div>
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group (5).svg" alt="acter">
+                <p class="acters-card__title">Patrick Elliott</p>
+            </div>
+            <div class="acters-card">
+                <img class="acters-card__img" src="./acters/Mask Group (3).svg" alt="acter">
+                <p class="acters-card__title">Morgan O'Neill</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="coming">
+    <div class="coming-wrapper">
+        <div class="coming-card"></div>
+        <div class="coming-card">
+            <img src="/logo/2021.svg" alt="2021" class="coming-card__img">
+            <h4 class="coming-card__title">Coming soon...</h4>
+        </div>
+    </div>
+</section>
+<section class="register" id="moreinfo">
+    <div class="register-wrapper">
+        <h3 class="register-title">Are You New Here ?
+            Don’t wait, Register Now. </h3>
+        <div class="register-btn">Register Now</div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-wrapper">
+        <img src="/logo/logo.svg" alt="logo" class="footer-img">
+        <ul>
+            <li><a href="#" class="footer-link">Voice over and Subtitle<br>Media Center<br>Privacy<br>Contact us</a>
+            </li>
+            <li><a href="#" class="footer-link">Voice Description <br> Investor Relations <br> Legal Provisions</a>
+            </li>
+            <li><a href="#" class="footer-link">Help Center <br> Job Opportunities <br> Cookies Preferences</a>
+            </li>
+            <li><a href="#" class="footer-link">Gift Cards <br> Terms of Use <br> Corporate Informations</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
